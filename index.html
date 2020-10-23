@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F58V258CL3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-F58V258CL3');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Ben Unyolo, full stack web developer based in Montreal, Canada">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/tingle.css" rel="stylesheet">
+  <!-- icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <title>Ben Unyolo | Full Stack Web Developer</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- TITLE -->
+    <section id="frontpage">
+      <div class="title">
+        <h1>Ben Unyolo</h1>
+      </div>
+      <div class="title">
+        <h2>Full Stack Web Developer</h2>
+      </div>
+
+      <div class="arrow-div" onclick="scrollDown('aboutme')">
+        <svg viewBox="4 4 16 16" class="arrow bounce" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h34v24H0V0z" fill="none" />
+          <path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z" />
+        </svg>
+      </div>
+
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="aboutme">
+      <h3>About Me</h3>
+      <p>Hi! I’m Ben, a web developer originally from England, based in <strong>Montreal</strong>.</p>
+      <p>
+        After graduating from <strong>The University of Manchester</strong> in England with a degree in
+        <strong>Biomedical Sciences</strong>, I decided to
+        spend a year working for <strong>Disney</strong> in Orlando.
+        Afterwards I returned to the UK and became a <strong>Manager</strong> for a restaurant group in Manchester.
+        The following year I moved to Canada, where I began my Web Developer journey.
+        I first lived in Ottawa, but I am now based in Montreal providing Tech Support for the VFX company
+        <strong>DNEG</strong>.
+      </p>
+      <p class="no-floor">I'm a self taught full stack web developer with a bit more experience on the front-end.
+        Some of the technologies and tools I've been working with recently include:
+      <ul class="stack">
+        <li>Javascript (ES6+)</li>
+        <li>React</li>
+        <li>NodeJS</li>
+        <li>ExpressJS</li>
+        <li>MongoDB</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+      To see more, take a look at my <a onclick="scrollDown('projects')">projects</a> and <a
+        onclick="scrollDown('certifications')">certifications</a>.
+
+      </p>
+      <p>When I'm not coding I'm usually training for my next half-marathon, reading a book about the tech industry or
+        watching English <strike>soccer</strike> football.</p>
+
+      <p class="links">Check out my <a href="BenUnyoloCV.pdf" target="_blank">resume</a>, <a
+          href="https://www.linkedin.com/in/benunyolo/" target="_blank">linkedin</a> and <a
+          href="https://github.com/benunyolo" target="_blank">github</a>, or send
+        me an <a href="mailto:ben@benunyolo.com" target="_blank">email</a>.</p>
+
+    </section>
+    <span class="separator"></span>
+
+    <!-- PORTFOLIO -->
+    <section id="projects">
+      <h3>Projects</h3>
+      <div class="row row-cols">
+        <div class="col">
+          <div class="square">
+            <div class="project">
+              <h4>Cocktail Book</h4>
+              <div class="view-project">
+                <a href="https://github.com/BenUnyolo/CocktailBook" target="_blank">code</a> |
+                <a href="https://benuny-cocktailbook.herokuapp.com/" target="_blank">demo</a>
+                <!-- | <a id="cocktail-video-link" data-micromodal-trigger="cocktail-modal">video</a> -->
+              </div>
+              <div class="details">
+                <p>
+                  A full stack MERN application to store cocktail recipes. The user creates an account and then is able
+                  to use the app. It uses JSON web tokens (JWT) to track user login state. I created this app as I love
+                  making cocktails but can never remember which ones I liked.
+                </p>
+              </div>
+              <div class="technologies">
+                <span class="technology">React</span>
+                <span class="technology">Redux</span>
+                <span class="technology">Node.js</span>
+                <span class="technology">Express</span>
+                <span class="technology">MongoDB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="square">
+            <div class="project">
+              <h4>Text to Audio App</h4>
+              <div class="view-project">
+                <a href="https://github.com/BenUnyolo/texttoaudio" target="_blank">code</a> |
+                <a href="https://benunyolo.github.io/TextToAudio/" target="_blank">demo</a> |
+                <a id="text-audio-video-link" data-micromodal-trigger="text-audio-modal">video</a>
+              </div>
+              <div class="details">
+                <p>
+                  An app that enables the user to create audio files from a list of words or phrases in multiple
+                  languages. It utilises the ResponsiveVoice text-to-speech API to generate the audio, and the JSZip
+                  javascript library to create the zip files for the mp3 files. </p>
+              </div>
+              <div class="technologies">
+                <span class="technology">Javascript</span>
+                <span class="technology">HTML</span>
+                <span class="technology">CSS</span>
+                <span class="technology">Node.js</span>
+                <span class="technology">Express</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="square">
+            <div class="project">
+              <h4>French Numbers Game</h4>
+              <div class="view-project">
+                <a href="https://github.com/BenUnyolo/numbergame" target="_blank">code</a> |
+                <a href="https://benunyolo.github.io/numbergame/" target="_blank">demo</a> |
+                <a id="numbers-video-link" data-micromodal-trigger="numbers-modal">video</a>
+              </div>
+              <div class="details">
+                <p>
+                  A game to help with learning French numbers (0-100). As a French learner I struggle quickly processing
+                  a number in my head so I built an app to help me practice.
+                </p>
+              </div>
+              <div class="technologies">
+                <span class="technology">Javascript</span>
+                <span class="technology">HTML</span>
+                <span class="technology">CSS</span>
+                <span class="technology">Node.js</span>
+                <span class="technology">Express</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="square">
+            <div class="project">
+              <h4>Discount Book Finder</h4>
+              <div class="view-project">
+                <a href="https://github.com/BenUnyolo/BookOutletPrice" target="_blank">code</a> |
+                <a id="book-video-link" data-micromodal-trigger="book-modal">video</a>
+              </div>
+              <div class="details">
+                <p>
+                  A script to help me find books on the discount book site bookoutlet.com that I have on my Good Reads
+                  'To Read' shelf. It pulls the to read shelf from the Good Reads API and uses web scraping to search
+                  bookoutlet.com, then returning a list of books featuring in both with the price and URL.
+                </p>
+              </div>
+              <div class="technologies">
+                <span class="technology">Node.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+      <h3>Certifications</h3>
+      <ul>
+        <li>
+          <a href="https://online-learning.harvard.edu/course/cs50-introduction-computer-science"
+            target="_blank">Harvard CS50</a>
+          <span class="cert-tech">(
+            <strong>C</strong>,
+            <strong>Python</strong>,
+            <strong>SQL</strong>,
+            <strong>Algorithms</strong>,
+            <strong>Data Structures</strong>
+            )
+          </span>
+        </li>
+        <li>
+          <a href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank">The Web Developer
+            Bootcamp</a>
+          <span class="cert-tech">(
+            <strong>HTML</strong>,
+            <strong>CSS</strong>,
+            <strong>Javascript</strong>,
+            <strong>Node</strong>,
+            <strong>Express</strong>,
+            <strong>MongoDB</strong>,
+            <strong>Git</strong>
+            )
+          </span>
+        </li>
+        <li>
+          <a href="https://www.udemy.com/course/understand-javascript/" target="_blank">JavaScript: Understanding the
+            Weird Parts</a>
+          <span class="cert-tech">(
+            <strong>Advanced Javascript</strong>
+            )
+          </span>
+        </li>
+        <li>
+          <a href="https://javascript30.com/" target="_blank">JavaScript 30</a>
+          <span class="cert-tech">(
+            <strong>Javascript</strong>
+            )
+          </span>
+        </li>
+        <li>
+          <a href="https://www.udemy.com/course/react-redux/" target="_blank">Modern React with Redux</a>
+          <span class="cert-tech">(
+            <strong>React</strong>,
+            <strong>Redux</strong>
+            )
+          </span>
+        </li>
+      </ul>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h3>Contact</h3>
+      <p>
+        If you are looking for a passionate, methodical and logical web developer with a strong determination to succeed
+        in this industry, you can send me an email at <a href="mailto:ben@benunyolo.com"
+          target="_blank">ben@benunyolo.com</a> or send
+        me a message on <a href="https://www.linkedin.com/in/benunyolo/" target="_blank">LinkedIn</a>.
+      </p>
+    </section>
+
+    <!-- FOOTER -->
+    <section id="footer">
+      <p>Page designed by Ben Unyolo.</p>
+    </section>
+  </div>
+
+  <script src="js/moveTo.js"></script>
+  <script src="js/tingle.js"></script>
+  <script src="js/script.js"></script>
+  </script>
+</body>
+
+</html>
