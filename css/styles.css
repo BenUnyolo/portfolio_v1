@@ -59,33 +59,43 @@ p {
 ul {
   margin-top: 0;
   margin-bottom: 1rem;
+  padding: 0 1rem;
+
+  list-style-type: square;
 }
 
 li {
-  font-size: 0.75rem;
+  /* font-size: 0.75rem;
   list-style: none;
-  margin-left: -1.6rem; 
+  margin-left: -1.6rem;  */
+
+  font-size: 0.8rem;
+  color: var(--highlight-color);
 }
 
-li::before {
+.li-text {
+  color: var(--text-color);
+}
+
+/* li::before {
   content: "\25A0 ";
   font-size: 0.75rem;
   color: var(--highlight-color);
   display: inline-block;
   width: 0.6rem;
-}
+} */
 
-@media (min-width:372px) {
+/* @media (min-width:372px) {
   li {
     font-size: 0.83rem;
   }
-}
+} */
 
-@media (min-width:576px) {
+/* @media (min-width:576px) {
   li::before {
     font-size: 1rem;
   }
-}
+} */
 
 strong {
   font-weight: bolder;
@@ -277,14 +287,28 @@ a:hover:after {
   margin-bottom: 0;
 }
 
-#aboutme li::before {
+/* #aboutme li::before {
   width: 0.7rem;
+} */
+
+#aboutme .li-text {
+  font-size: 0.75rem;
+}
+
+@media (min-width:372px) {
+  #aboutme .li-text {
+    font-size: 0.83rem;
+  }
 }
 
 .stack {
   display: grid;
   line-height: 1.5;
-  grid-template-columns: repeat(auto-fill,180px);
+  grid-template-columns: repeat(auto-fill,7.75rem);
+  /* margin-top: 0.5rem;
+  margin-bottom: 0.5rem; */
+  margin-block-end: 0.25rem;
+  margin-block-start: 0.25rem;
 }
 
 /* PROJECTS */
@@ -439,15 +463,18 @@ div::-webkit-scrollbar-corner {
 
 /* CERTIFICATIONS */
 
-#certifications li {
+#certifications .li-text {
   font-size: 1rem;
   line-height: 1;
-  margin-bottom: .4em;
 }
 
-#certifications li::before {
-  width: 0.5rem;
+#certifications li {
+  margin-bottom: 0.4rem;
 }
+
+/* #certifications li::before {
+  width: 0.5rem;
+} */
 
 #certifications a {
   vertical-align: middle;
@@ -545,14 +572,16 @@ video {
   margin-top: 0;
 }
 
-.modal__header .modal__close:before { content: "\2715"; }
-
-.modal__content {
-  /* margin-top: 2rem; */
-  /* margin-bottom: 2rem; */
-  /* line-height: 1.5; */
-  /* color: rgba(0,0,0,.8); */
+.modal__header .modal__close:before {
+  content: "\2715";
 }
+
+/* .modal__content {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  color: rgba(0,0,0,.8);
+} */
 
 
 /**************************\
