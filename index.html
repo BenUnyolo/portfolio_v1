@@ -49,7 +49,7 @@
     <!-- ABOUT ME -->
     <section id="aboutme">
       <h3>About Me</h3>
-      <p>Hi! I’m Ben, a web developer originally from England, based in <strong>Montreal</strong>.</p>
+      <p>Hi! I’m Ben, a <strong>web developer</strong> originally from England, based in <strong>Montreal</strong>.</p>
       <p>
         After graduating from <strong>The University of Manchester</strong> in England with a degree in
         <strong>Biomedical Sciences</strong>, I decided to
@@ -59,14 +59,17 @@
         I first lived in Ottawa, but I am now based in Montreal providing Tech Support for the VFX company
         <strong>DNEG</strong>.
       </p>
-      <p class="no-floor">I'm a self taught full stack web developer with a bit more experience on the front-end.
-        Some of the technologies and tools I've been working with recently include:
+      <p class="no-floor">I'm a self taught full stack web developer focusing on Javascript with a bit more experience
+        on the front-end. Some of the technologies and tools I've been working with recently include:
       <ul class="stack">
         <li><span class="li-text">Javascript (ES6+)</li>
+        <li><span class="li-text">Python</li>
         <li><span class="li-text">React</li>
         <li><span class="li-text">NodeJS</li>
         <li><span class="li-text">ExpressJS</li>
+        <li><span class="li-text">Flask</li>
         <li><span class="li-text">MongoDB</li>
+        <li><span class="li-text">SQL (MySQL)</li>
         <li><span class="li-text">HTML</li>
         <li><span class="li-text">CSS</li>
       </ul>
@@ -78,8 +81,8 @@
         watching English <strike>soccer</strike> football.</p>
 
       <p class="links">Check out my <a href="BenUnyoloCV.pdf" target="_blank">resume</a>, <a
-          href="https://www.linkedin.com/in/benunyolo/" target="_blank">linkedin</a> and <a
-          href="https://github.com/benunyolo" target="_blank">github</a>, or send
+          href="https://www.linkedin.com/in/benunyolo/" target="_blank">LinkedIn</a> and <a
+          href="https://github.com/benunyolo" target="_blank">GitHub</a>, or send
         me an <a href="mailto:ben@benunyolo.com" target="_blank">email</a>.</p>
 
     </section>
@@ -92,6 +95,37 @@
         <div class="col">
           <div class="square">
             <div class="project">
+              <h4>Scrath Map</h4>
+              <div class="view-project">
+                <strong>code:</strong>
+                <a href="https://github.com/BenUnyolo/worldscratchmap" target="_blank">front</a>,
+                <a href="https://github.com/BenUnyolo/worldscratchmap-backend" target="_blank">back</a> |
+                <a href="https://benunyolo.github.io/worldscratchmap" target="_blank">demo</a>
+              </div>
+              <div class="details">
+                <p>
+                  A full stack web app where the user can create interactive maps to show countries that they have
+                  visited. It
+                  uses different technologies to my Cocktail Book app, the front end is also <strong>React</strong> but
+                  this time uses <strong>context</strong> for state management and <strong>functional
+                    components</strong>
+                  with <strong>hooks</strong>. For styling I used <strong>Tailwind CSS</strong>, and
+                  <strong>JWT</strong> to track login state. On the back end it uses the <strong>Python</strong>
+                  framework <strong>Flask</strong>, with a <strong>MySQL</strong> database.
+                </p>
+              </div>
+              <div class="technologies">
+                <span class="technology">React</span>
+                <span class="technology">Python</span>
+                <span class="technology">Flask</span>
+                <span class="technology">MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="square">
+            <div class="project">
               <h4>Cocktail Book</h4>
               <div class="view-project">
                 <a href="https://github.com/BenUnyolo/CocktailBook" target="_blank">code</a> |
@@ -100,9 +134,10 @@
               </div>
               <div class="details">
                 <p>
-                  A full stack MERN application to store cocktail recipes. The user creates an account and then is able
-                  to use the app. It uses JSON web tokens (JWT) to track user login state. I created this app as I love
-                  making cocktails but can never remember which ones I liked.
+                  A full stack web app to store cocktail recipes. It uses the MERN stack, so <strong>React</strong> on
+                  the front end, with <strong>Redux</strong> for state management, and on the backend
+                  <strong>Express</strong>, with a <strong>MongoDB</strong> database. It uses <strong>Bootstrap</strong>
+                  for CSS styling and <strong>JSON web tokens</strong> (JWT) to track user login state.
                 </p>
               </div>
               <div class="technologies">
@@ -126,16 +161,16 @@
               </div>
               <div class="details">
                 <p>
-                  An app that enables the user to create audio files from a list of words or phrases in multiple
+                  A web app that enables the user to create audio files from a list of words or phrases in multiple
                   languages. It utilises the ResponsiveVoice text-to-speech API to generate the audio, and the JSZip
-                  javascript library to create the zip files for the mp3 files. </p>
+                  javascript library to create the zip files for the mp3 files. It uses <strong>vanilla
+                    Javascript</strong>, with <strong>ES6</strong>.
+                </p>
               </div>
               <div class="technologies">
                 <span class="technology">Javascript</span>
                 <span class="technology">HTML</span>
                 <span class="technology">CSS</span>
-                <span class="technology">Node.js</span>
-                <span class="technology">Express</span>
               </div>
             </div>
           </div>
@@ -151,16 +186,15 @@
               </div>
               <div class="details">
                 <p>
-                  A game to help with learning French numbers (0-100). As a French learner I struggle quickly processing
-                  a number in my head so I built an app to help me practice.
+                  A web game to help with learning French numbers (0-100). It generates a random number between 0 & 100,
+                  plays the audio in French and the user inputs the number. It uses <strong>vanilla Javascript</strong>,
+                  with <strong>ES6</strong>.
                 </p>
               </div>
               <div class="technologies">
                 <span class="technology">Javascript</span>
                 <span class="technology">HTML</span>
                 <span class="technology">CSS</span>
-                <span class="technology">Node.js</span>
-                <span class="technology">Express</span>
               </div>
             </div>
           </div>
@@ -249,6 +283,16 @@
             <span class="cert-tech">(
               <strong>React</strong>,
               <strong>Redux</strong>
+              )
+            </span>
+          </span>
+        </li>
+        <li>
+          <span class="li-text">
+            <a href="https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/" target="_blank">JavaScript Algorithms and Data Structures</a>
+            <span class="cert-tech">(
+              <strong>Data Structures</strong>,
+              <strong>Algorithms</strong>
               )
             </span>
           </span>
