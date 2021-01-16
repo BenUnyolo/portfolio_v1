@@ -7,6 +7,7 @@ const scrollDown = (id) => {
 
 // TINGLE MODAL
 document.querySelector('#world-map-video-link').addEventListener('click', () => worldMapModal.open());
+document.querySelector('#cocktail-book-video-link').addEventListener('click', () => cocktailBookModal.open());
 document.querySelector('#text-audio-video-link').addEventListener('click', () => textAudioModal.open());
 document.querySelector('#numbers-video-link').addEventListener('click', () => numbersModal.open());
 document.querySelector('#book-video-link').addEventListener('click', () => bookPriceModal.open());
@@ -45,14 +46,14 @@ const videoModalContent = (title, id, path) => {
 
 // create modals
 const worldMapModal = new tingle.modal(modalConfig('world-map-video'));
-const cocktailModal = new tingle.modal(modalConfig('cocktail-video'));
+const cocktailBookModal = new tingle.modal(modalConfig('cocktail-book-video'));
 const textAudioModal = new tingle.modal(modalConfig('text-audio-video'));
 const numbersModal = new tingle.modal(modalConfig('numbers-video'));
 const bookPriceModal = new tingle.modal(modalConfig('book-price-video'));
 
 // set modal content
-// cocktailModal.setContent(videoModalContent('Cocktail Book', 'cocktail-video', 'public/video/CocktailBook.mp4'));
 worldMapModal.setContent(videoModalContent('World Scratch Map', 'world-map-video', 'public/video/WorldMap.mp4'));
+cocktailBookModal.setContent(videoModalContent('Cocktail Book', 'cocktail-book-video', 'public/video/CocktailBook.mp4'));
 textAudioModal.setContent(videoModalContent('Text To Audio App', 'text-audio-video', 'public/video/TextToAudio.mp4'));
 numbersModal.setContent(videoModalContent('French Numbers Game', 'numbers-video', 'public/video/NumberGame.mp4'));
 bookPriceModal.setContent(videoModalContent('Discount Book Finder', 'book-price-video', 'public/video/BookPrice.mp4'));
