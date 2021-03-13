@@ -3,14 +3,14 @@
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F58V258CL3"></script>
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-F58V258CL3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-F58V258CL3');
-  </script>
+  </script> -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio of Ben Unyolo, full stack developer based in Montreal, Canada">
@@ -37,7 +37,7 @@
         <h2>Full Stack Developer</h2>
       </div>
 
-      <div class="arrow-div" onclick="scrollDown('aboutme')">
+      <div class="arrow-div scroll-link" data-scroll-location="aboutme">
         <svg viewBox="4 4 16 16" class="arrow bounce" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 0h34v24H0V0z" fill="none" />
           <path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z" />
@@ -74,8 +74,8 @@
         <li><span class="li-text">HTML</li>
         <li><span class="li-text">CSS</li>
       </ul>
-      <p>To see more, take a look at my <a onclick="scrollDown('projects')">projects</a> and <a
-          onclick="scrollDown('certifications')">certifications</a>.</p>
+      <p>To see more, take a look at my <a class="scroll-link" data-scroll-location="projects">projects</a> and <a
+        class="scroll-link" data-scroll-location="certifications">certifications</a>.</p>
 
       </p>
       <p>When I'm not coding I'm usually training for my next half-marathon, reading a book about the tech industry or
