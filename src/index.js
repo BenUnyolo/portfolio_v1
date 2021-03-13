@@ -1,3 +1,9 @@
+import MoveTo from "moveto";
+import tingle from "./tingle";
+
+import "./styles.css";
+import "./tingle.css";
+
 // MOVETO SCROLL SETUP
 const scrollDown = (id) => {
   const section = document.querySelector(`#${id}`);
