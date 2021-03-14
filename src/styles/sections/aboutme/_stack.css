@@ -1,0 +1,15 @@
+.stack {
+  display: grid;
+  line-height: 1.5;
+  grid-template-columns: repeat(auto-fill, 7.75rem);
+  margin-block-end: 0.25rem;
+  margin-block-start: 0.25rem;
+
+  & liText {
+    font-size: 0.75rem;
+
+    @mixin atXSmall {
+      font-size: inherit;
+    }
+  }
+}

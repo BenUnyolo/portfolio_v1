@@ -27,6 +27,11 @@ body {
 
 section {
   display: block;
+  margin-top: 2.5rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 p {
@@ -39,11 +44,9 @@ p {
   }
 }
 
-/* @media (min-width: 372px) {
-  p {
-    font-size: 1rem;
-  }
-} */
+strong {
+  font-weight: bolder;
+}
 
 ul {
   margin-top: 0;
@@ -54,40 +57,12 @@ ul {
 }
 
 li {
-  /* font-size: 0.75rem;
-  list-style: none;
-  margin-left: -1.6rem;  */
-
   font-size: 0.8rem;
   color: var(--highlight-color);
 }
 
-.li-text {
+.liText {
   color: var(--text-color);
-}
-
-/* li::before {
-  content: "\25A0 ";
-  font-size: 0.75rem;
-  color: var(--highlight-color);
-  display: inline-block;
-  width: 0.6rem;
-} */
-
-/* @media (min-width:372px) {
-  li {
-    font-size: 0.83rem;
-  }
-} */
-
-/* @media (min-width:576px) {
-  li::before {
-    font-size: 1rem;
-  }
-} */
-
-strong {
-  font-weight: bolder;
 }
 
 svg {
@@ -117,25 +92,19 @@ h2 {
 }
 
 h3 {
-  margin-top: 2rem;
   padding-top: 0.66rem;
   font-size: 1.66rem;
   line-height: 1;
-}
 
-@media (min-width: 576px) {
-  h3 {
+  @mixin atSmall {
     font-size: 2rem;
-    margin-top: 2.5rem;
   }
 }
 
 h4 {
   font-size: 1rem;
-}
 
-@media (min-width: 372px) {
-  h4 {
+  @mixin atXSmall {
     font-size: 1.15rem;
   }
 }
@@ -146,30 +115,30 @@ a {
   text-decoration: none;
   position: relative;
   cursor: pointer;
-}
 
-a:after {
-  width: 0%;
-  height: 2px;
-  background: var(--highlight-color);
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
+  &:after {
+    width: 0%;
+    height: 2px;
+    background: var(--highlight-color);
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
 
-a:hover {
-  color: var(--highlight-color);
-  text-decoration: none;
-}
+  &:hover {
+    color: var(--highlight-color);
+    text-decoration: none;
+  }
 
-a:hover:after {
-  width: 100%;
+  &:hover:after {
+    width: 100%;
+  }
 }
 
 .container {
@@ -178,28 +147,50 @@ a:hover:after {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-}
 
-@media (min-width: 576px) {
-  .container {
+  @mixin atSmall {
     max-width: 540px;
   }
-}
 
-@media (min-width: 768px) {
-  .container {
+  @mixin atMedium {
     max-width: 720px;
   }
-}
 
-@media (min-width: 992px) {
-  .container {
+  @mixin atLarge {
     max-width: 960px;
   }
-}
 
-@media (min-width: 1200px) {
-  .container {
+  @mixin atXLarge {
     max-width: 1140px;
   }
+}
+
+div::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+div::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+
+div::-webkit-scrollbar-thumb {
+  background: #707070;
+}
+
+div::-webkit-scrollbar-thumb:hover {
+  background: var(--highlight-color);
+}
+
+div::-webkit-scrollbar-thumb:active {
+  background: var(--highlight-color);
+}
+
+div::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+div::-webkit-scrollbar-corner {
+  background: 0 0;
 }

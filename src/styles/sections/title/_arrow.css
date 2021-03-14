@@ -1,0 +1,53 @@
+.arrowDiv {
+  text-decoration: none;
+  position: absolute;
+  bottom: 1rem;
+  height: 1.75rem;
+  width: 1.75rem;
+
+  @mixin atSmall {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+.arrow {
+  height: 1.75rem;
+  width: 1.75rem;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+  fill: var(--text-color);
+
+  &:hover {
+    fill: var(--highlight-color);
+  }
+
+  @mixin atSmall {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(-2rem);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

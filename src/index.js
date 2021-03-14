@@ -2,7 +2,6 @@ import MoveTo from "moveto";
 import tingle from "./tingle";
 
 import "./styles/styles.css";
-import "./styles/tingle.css";
 
 // MOVETO SCROLL SETUP
 const scrollDown = (id) => {
@@ -61,7 +60,7 @@ const modalConfig = (videoId) => {
 const videoModalContent = (title, id, path) => {
   return `
   <h4>${title}</h4>
-  <video id="${id}" controls>
+  <video class="modal__video" id="${id}" controls>
     <source src="${path}" type="video/mp4">
     Your browser does not support this video.
   </video>
