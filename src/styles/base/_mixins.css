@@ -1,0 +1,29 @@
+@define-mixin atXSmall {
+  @media (min-width: $breakpoint-xs) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atSmall {
+  @media (min-width: $breakpoint-sm) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atMedium {
+  @media (min-width: $breakpoint-md) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atLarge {
+  @media (min-width: $breakpoint-lg) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atXLarge {
+  @media (min-width: $breakpoint-xl) {
+    @mixin-content;
+  }
+}

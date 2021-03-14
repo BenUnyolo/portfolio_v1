@@ -23,7 +23,30 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: "css-loader",
+            options: {
+              modules: "global",
+              importLoaders: 1,
+            },
+          },
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: [
+                  require("postcss-import"),
+                  require("postcss-mixins"),
+                  require("postcss-simple-vars"),
+                  require("postcss-nested"),
+                  require("autoprefixer"), // adds vendor prefixes
+                ],
+              },
+            },
+          },
+        ],
       },
     ],
   },

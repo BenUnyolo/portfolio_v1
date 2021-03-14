@@ -1,8 +1,8 @@
 import MoveTo from "moveto";
 import tingle from "./tingle";
 
-import "./styles.css";
-import "./tingle.css";
+import "./styles/styles.css";
+import "./styles/tingle.css";
 
 // MOVETO SCROLL SETUP
 const scrollDown = (id) => {
