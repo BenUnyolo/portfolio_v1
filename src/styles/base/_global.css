@@ -27,10 +27,14 @@ body {
 
 section {
   display: block;
-  margin-top: 2.5rem;
+  margin-top: 2em;
 
   &:first-child {
     margin-top: 0;
+  }
+
+  & p:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -50,9 +54,8 @@ strong {
 
 ul {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   padding: 0 1rem;
-
   list-style-type: square;
 }
 

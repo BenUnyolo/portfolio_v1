@@ -2,4 +2,8 @@
   & p {
     margin-bottom: 1.33rem;
   }
+
+  & p:last-child {
+    margin-bottom: 0;
+  }
 }

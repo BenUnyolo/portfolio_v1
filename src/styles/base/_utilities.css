@@ -1,3 +1,7 @@
 .noMarginBottom {
   margin-bottom: 0 !important;
 }
+
+.xSmallPaddingBottom {
+  padding-bottom: 0.5rem !important;
+}

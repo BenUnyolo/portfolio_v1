@@ -37,6 +37,7 @@ module.exports = {
             options: {
               postcssOptions: {
                 plugins: [
+                  require("postcss-preset-env"),
                   require("postcss-import"),
                   require("postcss-mixins"),
                   require("postcss-simple-vars"),
