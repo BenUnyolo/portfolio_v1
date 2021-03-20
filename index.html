@@ -47,7 +47,7 @@
 
     <!-- ABOUT ME -->
     <section id="aboutme">
-      <h3>About Me</h3>
+      <h3 class="smallPaddingTop">About Me</h3>
       <p>Hi! I’m Ben, a <strong>full stack developer</strong> originally from England, based in <strong>Montreal</strong>.</p>
       <p>
         After graduating from <strong>The University of Manchester</strong> in England with a degree in
@@ -100,7 +100,12 @@
                 <a href="https://github.com/BenUnyolo/worldscratchmap" target="_blank">front</a>,
                 <a href="https://github.com/BenUnyolo/worldscratchmap-backend" target="_blank">back</a> |
                 <a href="https://benunyolo.github.io/worldscratchmap" target="_blank">demo</a> |
-                <a id="world-map-video-link" data-micromodal-trigger="world-map-modal">video</a>
+                <a
+                class="modal-link"
+                  data-modal-title="World Scratch Map"
+                data-modal-path="public/video/WorldMap.mp4"
+                data-modal-id="world-map-video"
+                >video</a>
               </div>
               <div class="projectBoxes__details">
                 <p>
@@ -130,7 +135,12 @@
               <div class="projectBoxes__links">
                 <a href="https://github.com/BenUnyolo/CocktailBook" target="_blank">code</a> |
                 <a href="https://benuny-cocktailbook.herokuapp.com/" target="_blank">demo</a>
-                | <a id="cocktail-book-video-link" data-micromodal-trigger="cocktail-book-modal">video</a>
+                | <a
+                  class="modal-link"
+                  data-modal-title="Cocktail Book"
+                  data-modal-path="public/video/CocktailBook.mp4"
+                  data-modal-id="cocktail-book-video"
+                  >video</a>
               </div>
               <div class="projectBoxes__details">
                 <p>
@@ -153,16 +163,41 @@
         <div class="projectBoxes__box">
           <div class="projectBoxes__square">
             <div class="projectBoxes__contents">
+              <h4>Portfolio Site</h4>
+              <div class="projectBoxes__links">
+                <a href="https://github.com/BenUnyolo/portfolio_v1" target="_blank">code</a>
+              </div>
+              <div class="projectBoxes__details">
+                <p>
+                  You're already here! I wanted to keep it simple using <strong>Vanilla JavaScript</strong> and my own <strong>CSS</strong>, the only libraries I use are the JavaScript libraries Tingle and moveTo for modals and scroll animation respectively. The JavaScript is organised into modules and uses <strong>object-oriented programming</strong> with class syntax. For the CSS I use <strong>PostCSS</strong> to incorporate <strong>Sass-like</strong> syntax. The JavaScript and CSS are bundled using <strong>Webpack</strong>.
+                </p>
+              </div>
+              <div class="projectBoxes__technologies">
+                <span class="projectBoxes__techButton">JavaScript</span>
+                <span class="projectBoxes__techButton">HTML</span>
+                <span class="projectBoxes__techButton">CSS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projectBoxes__box">
+          <div class="projectBoxes__square">
+            <div class="projectBoxes__contents">
               <h4>Text to Audio App</h4>
               <div class="projectBoxes__links">
                 <a href="https://github.com/BenUnyolo/texttoaudio" target="_blank">code</a> |
                 <a href="https://benunyolo.github.io/TextToAudio/" target="_blank">demo</a> |
-                <a id="text-audio-video-link" data-micromodal-trigger="text-audio-modal">video</a>
+                <a 
+                  class="modal-link"
+                  data-modal-title="Text To Audio App"
+                  data-modal-path="public/video/TextToAudio.mp4"
+                  data-modal-id="text-audio-video"
+                >video</a>
               </div>
               <div class="projectBoxes__details">
                 <p>
                   A web app that enables the user to create audio files from a list of words or phrases in multiple
-                  languages. It utilises the ResponsiveVoice text-to-speech API to generate the audio, and the JSZip
+                  languages. It utilizes the ResponsiveVoice text-to-speech API to generate the audio, and the JSZip
                   JavaScript library to create the zip files for the mp3 files. It uses <strong>Vanilla
                     JavaScript</strong>, with <strong>ES6</strong>.
                 </p>
@@ -182,7 +217,12 @@
               <div class="projectBoxes__links">
                 <a href="https://github.com/BenUnyolo/numbergame" target="_blank">code</a> |
                 <a href="https://benunyolo.github.io/numbergame/" target="_blank">demo</a> |
-                <a id="numbers-video-link" data-micromodal-trigger="numbers-modal">video</a>
+                <a 
+                  class="modal-link"
+                  data-modal-title="French Numbers Game"
+                  data-modal-path="public/video/NumberGame.mp4"
+                  data-modal-id="numbers-video"
+                >video</a>
               </div>
               <div class="projectBoxes__details">
                 <p>
@@ -205,12 +245,17 @@
               <h4>Discount Book Finder</h4>
               <div class="projectBoxes__links">
                 <a href="https://github.com/BenUnyolo/BookOutletPrice" target="_blank">code</a> |
-                <a id="book-video-link" data-micromodal-trigger="book-modal">video</a>
+                <a 
+                  class="modal-link"
+                  data-modal-title="Discount Book Finder"
+                  data-modal-path="public/video/BookPrice.mp4"
+                  data-modal-id="book-price-video"
+                >video</a>
               </div>
               <div class="projectBoxes__details">
                 <p>
                   A script to help me find books on the discount book site bookoutlet.com that I have on my Good Reads
-                  'To Read' shelf. It pulls the to read shelf from the Good Reads API and uses web scraping to search
+                  'To Read' shelf. It pulls the shelf from the Good Reads API and uses web scraping to search
                   bookoutlet.com, then returning a list of books featuring in both with the price and URL.
                 </p>
               </div>
@@ -320,7 +365,6 @@
   </div>
 
   <script src="dist/main.js"></script>
-  </script>
 </body>
 
 </html>

@@ -5,3 +5,11 @@
 .xSmallPaddingBottom {
   padding-bottom: 0.5rem !important;
 }
+
+.xSmallPaddingTop {
+  padding-top: 0.5rem !important;
+}
+
+.smallPaddingTop {
+  padding-top: 0.75rem !important;
+}
