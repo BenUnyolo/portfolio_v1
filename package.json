@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "watch": "watch 'npm run build' ./src"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
     "webpack-cli": "^4.5.0"
   },
   "dependencies": {
-    "moveto": "^1.8.2"
+    "moveto": "^1.8.2",
+    "watch": "^1.0.2"
   }
 }
